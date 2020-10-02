@@ -13,7 +13,7 @@ section{
 .banner{
     position: relative;
     min-height: 100vh;
-    background: url(images/orange.jpeg);
+    background: url(./orange.jpeg);
     background-size: cover;
     background-color: black;
     background-position: right;
