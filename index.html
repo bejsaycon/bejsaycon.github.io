@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>BRUH</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+    <header>
+        <a href="#" class="logo">Bruh</a>
+        <nav class="toggle">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner" id="Home">
+        <div class="text-box">
+            <h2>Hola. I'm<br> <span>Bryan Jeff</span></h2>
+            <h3>Self-learning web developer, <br>electronics engineering student</h3>
+            <a href ="#" class="btn">About</a>
+        </div>
+    </section>
+    <section class="about" id="About">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content"> 
+            <div class="contentBx a1">
+            <h3>Im a self-learning web developer<br><br></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                sed do eiusmod tempor incididunt ut l
+                sed do eiusmod tempor incididunt ut l
+                sed do eiusmod tempor incididunt ut l
+                <br> <br>
+                Lorem ipsum dolor sit amet, consectetur
+                sed do eiusmod tempor incididunt ut l
+                sed do eiusmod tempor incididunt ut l
+                sed do eiusmod tempor incididunt ut l
+            </p>
+            </div>
+            <div class="a1">
+                <img src="images/bgv.jpg">
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="Contact">
+        <div class="heading white">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Block 7, Phase 2, Kalubihon Habitat,<br>Dalipuga, Iligan City 9200</p>
+                        </div>    
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>0906 127 7305</p>
+                        </div>    
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope-o"></i> </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>bjsaycon@gmail.com</p>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Send a Message!</h3>
+                    <input type="text" name="" placeholder="Full Name">
+                    <input type="email" name="" placeholder="Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <div class="copyright">
+        <p>Copyright 2020 Bryan Jeff Saycon. All rights reserved.</p>
+    </div>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
+
+    </body>
+</html>
