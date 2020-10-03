@@ -126,14 +126,13 @@ header.sticky ul li a{
     align-items: center;
 }
 .contentBx p{
-    padding-right: 40px;
     align-items: center;
     text-justify: distribute;
     line-height: 2em;
 }
 .a1{
     min-width: 50%;
-    padding-left: 40px;
+    padding-left: 10px;
 }
 img{
     max-width: 100%;
@@ -221,3 +220,36 @@ img{
 }
 
 /*Responsive */
+@media (max-width: 991px){
+    header,
+    header.sticky{
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+    .menu{
+        position: fixed;
+        top:68px;
+        left:0;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+    header ul li a{
+        color: rgb(109, 48, 10);
+    }
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url(images/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+}
