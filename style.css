@@ -231,7 +231,7 @@ img{
     .menu{
         position: fixed;
         top:68px;
-        left:-100%;
+        right:-100%;
         display: block;
         padding: 100px 50px;
         text-align: center;
@@ -243,7 +243,7 @@ img{
         border-top: 1px solid rgba(0,0,0,0.2);
     }
     .menu.active{
-        left:0;
+        right:0;
     }
     header ul li a{
         color: rgb(109, 48, 10);
@@ -266,8 +266,53 @@ img{
         background-size: 25px;
         cursor: pointer;
     }
-    header.sticky .toggle{
+    header.sticky .toggle {
         background-color: black;
     }
-    
+    section{
+        padding: 100px 50px;
+    }
+    .banner{
+        padding: 150px 50px 100px;
+    }
+    .banner h2{
+        font-size: 2em;
+        line-height: 1.5em;
+        margin-bottom: 10px;
+    }
+    .banner h3{
+        font-size: 1.2em;
+        line-height: 1.3em;
+    }
+    .btn{
+        margin-top: 34px;
+        padding: 12px 20px;
+        font-size: 14px;  
+    }
+    .heading h2{
+        font-size: 23px;
+    }
+    .contentBx h3{
+        font-size: 18px;
+    }
+    .content p{
+        font-size: 15px;
+        text-align: justify;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .a1{
+        margin-top: 40px;
+        margin-right: 0;
+    }
+    .contactInfo{
+        margin-bottom: 40px;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+    .formBx form input, .formBx form textarea {
+        font-size: 15px;
+    }
 }
