@@ -292,6 +292,9 @@ img{
     .heading h2{
         font-size: 23px;
     }
+    .contentBx{
+        padding-right: 0;
+    }
     .contentBx h3{
         font-size: 18px;
     }
