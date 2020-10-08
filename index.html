@@ -73,18 +73,19 @@
                         <div class="icon"><i class="fa fa-envelope-o"></i> </div>
                         <div class="text">
                             <h3>Email</h3>
-                            <p>bjsaycon@gmail.com</p>
+                            <p>bryanjeff.saycon@g.msuiit.edu.ph</p>
                         </div>    
                     </div>
                 </div>
             </div>
             <div class="formBx">
-                <form>
+                <form id="my-form" action="https://formspree.io/f/mwkwvrva" method="POST">
                     <h3>Send a Message!</h3>
-                    <input type="text" name="" placeholder="Full Name">
-                    <input type="email" name="" placeholder="Email">
-                    <textarea placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send">
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <textarea placeholder="Your Message" name="text" id="text"></textarea>
+                    <input type="submit" value="Send" id="my-form-button">
+                    <p id='my-form-status'></p>
                 </form>
             </div>
         </div>
@@ -111,4 +112,52 @@
     <!-- Add image slider and a fancy intro-->
     <!-- Add Header ICON-->
     </body>
+    <!-- Soemthing to commit-->
+<script>
+    window.addEventListener("DOMContentLoaded", function() {
+  
+      // get the form elements defined in your form HTML above
+      
+      var form = document.getElementById("my-form");
+      var button = document.getElementById("my-form-button");
+      var status = document.getElementById("my-form-status");
+  
+      // Success and Error functions for after the form is submitted
+      
+      function success() {
+        form.reset();
+        button.style = "display: none ";
+        status.innerHTML = "Thanks!";
+      }
+  
+      function error() {
+        status.innerHTML = "Oops! There was a problem.";
+      }
+  
+      // handle the form submission event
+  
+      form.addEventListener("submit", function(ev) {
+        ev.preventDefault();
+        var data = new FormData(form);
+        ajax(form.method, form.action, data, success, error);
+      });
+    });
+    
+    // helper function for sending an AJAX request
+  
+    function ajax(method, url, data, success, error) {
+      var xhr = new XMLHttpRequest();
+      xhr.open(method, url);
+      xhr.setRequestHeader("Accept", "application/json");
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+          success(xhr.response, xhr.responseType);
+        } else {
+          error(xhr.status, xhr.response, xhr.responseType);
+        }
+      };
+      xhr.send(data);
+    }
+  </script>
 </html>
