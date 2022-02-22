@@ -1,163 +1,45 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-        <link rel="icon" href="images/bg.ico" type="image/icon type">
-		<title>Bryan Jeff</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <head>
         <link rel="stylesheet" href="./style.css" />
-	</head>
-	<body>
-    <header>
-        <a href="#" class="logo">Bruh</a>
-        <div class="toggle" onclick="toggleMenu();">
-            <ul class="menu" onclick="toggleMenu();">
-                <li><a href="#Home" onclick="toggleMenu();">Home</a></li>
-                <li><a href="#About" onclick="toggleMenu();">About</a></li>
-                <li><a href="#Contact" onclick="toggleMenu();">Contact</a></li>
-            </ul>
+    </head>
+    <body>
+        <main id="main">
+        <div class="title-and-sub">
+            <h1 id="title">Dr. Norman Borlaug</h1>
+            <p>The man who saved a billion lives</p>
         </div>
-    </header>
-    <section class="banner" id="Home">
-        <div class="text-box">
-            <h2>i am<br> <span>Bryan Jeff</span></h2>
-            <h3>self-learning web developer, <br>electronics engineering student</h3>
-            <a href ="#About" class="btn">about</a>
-        </div>
-    </section>
-    <section class="about" id="About">
-        <div class="heading">
-            <h2>About Me</h2>
-        </div>
-        <div class="content"> 
-            <div class="contentBx a1">
-            <h3>Im a self-learning web developer<br><br></h3>
-            <p> Im currently practicing frontend fundamentals and 
-                tools for responsive web design through extensive research. 
-                Im currently an Electronics
-                Engineering student at Mindanao State University - 
-                Iligan Institute of Technology. Im about to launch my freelance projects soon. 
-                Keep in touch!
+            <figure id="img-div">
+                <img src="tribute-page-main-image.jpg">
+                <figcaption id="img-caption">Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.</figcaption>
+            </figure>
+            <section id="tribute-info">
+                <h2 id="headline">Here's a time line of Dr. Borlaug's life:</h2>
+                <ul> 
+                    <li><strong>1914</strong> - Born in Cresco, Iowa</li>
+                    <li><strong>1933</strong> - Leaves his family's farm to attend the University of Minnesota, thanks to a Depression era program known as the "National Youth Administration"</li>
+                    <li><strong>1935</strong> - Has to stop school and save up more money. Works in the Civilian Conservation Corps, helping starving Americans. "I saw how food changed them", he said. "All of this left scars on me."</li>
+                    <li><strong>1937</strong> - Finishes university and takes a job in the US Forestry Service</li>
+                    <li><strong>1938</strong> - Marries wife of 69 years Margret Gibson. Gets laid off due to budget cuts. Inspired by Elvin Charles Stakman, he returns to school study under Stakman, who teaches him about breeding pest-resistent plants.</li>
+                    <li><strong>1941</strong> - Tries to enroll in the military after the Pearl Harbor attack, but is rejected. Instead, the military asked his lab to work on waterproof glue, DDT to control malaria, disinfectants, and other applied science.</li>
+                    <li><strong>1942</strong> - Receives a Ph.D. in Genetics and Plant Pathology</li>
+                    <li><strong>1944</strong> - Rejects a 100% salary increase from Dupont, leaves behind his pregnant wife, and flies to Mexico to head a new plant pathology program. Over the next 16 years, his team breeds 6,000 different strains of disease resistent wheat - including different varieties for each major climate on Earth.</li>
+                    <li><strong>1945</strong> - Discovers a way to grown wheat twice each season, doubling wheat yields</li>
+                    <li><strong>1953</strong> - crosses a short, sturdy dwarf breed of wheat with a high-yeidling American breed, creating a strain that responds well to fertilizer. It goes on to provide 95% of Mexico's wheat.</li>
+                    <li><strong>1962</strong> - Visits Delhi and brings his high-yielding strains of wheat to the Indian subcontinent in time to help mitigate mass starvation due to a rapidly expanding population</li>
+                    <li><strong>1970</strong> - receives the Nobel Peace Prize</li>
+                    <li><strong>1983</strong> - helps seven African countries dramatically increase their maize and sorghum yields</li>
+                    <li><strong>1984</strong> - becomes a distinguished professor at Texas A&M University</li>
+                    <li><strong>2005</strong> - states "we will have to double the world food supply by 2050." Argues that genetically modified crops are the only way we can meet the demand, as we run out of arable land. Says that GM crops are not inherently dangerous because "we've been genetically modifying plants and animals for a long time. Long before we called it science, people were selecting the best breeds."</li>
+                    <li><strong>2009</strong> - dies at the age of 95.</li>
+                </ul>
+                <blockquote cite="http://news.rediff.com/report/2009/sep/14/pm-pays-tribute-to-father-of-green-revolution-borlaug.htm">
+                    <p>"Borlaug's life and achievement are testimony to the far-reaching contribution that one man's towering intellect, persistence and scientific vision can make to human peace and progress."</p>
+                    <cite>-- Indian Prime Minister Manmohan Singh</cite>
+                </blockquote>
+                <h3>If you have time, you should read more about this incredible human being on his <a id="tribute-link" href="https://en.wikipedia.org/wiki/Norman_Borlaug" target="_blank">Wikipedia entry</a>.</h3>
+            </section>
 
-            </p>
-            </div>
-            <div class="a1">
-                <img src="images/bgv.jpg">
-            </div>
-        </div>
-    </section>
-    <section class="contact" id="Contact">
-        <div class="heading white">
-            <h2>Contact Me</h2>
-        </div>
-        <div class="content">
-            <div class="contactInfo">
-                <h3>Contact Info</h3>
-                <div class="contactInfoBx">
-                    <div class="box">
-                        <div class="icon"><i class="fa fa-map-marker"></i></div>
-                        <div class="text">
-                            <h3>Address</h3>
-                            <p>Dalipuga, Iligan City 9200</p>
-                        </div>    
-                    </div>
-                    <div class="box">
-                        <div class="icon"><i class="fa fa-phone"></i></div>
-                        <div class="text">
-                            <h3>Phone</h3>
-                            <p>---- --- --- -- </p>
-                        </div>    
-                    </div>
-                    <div class="box">
-                        <div class="icon"><i class="fa fa-envelope-o"></i> </div>
-                        <div class="text">
-                            <h3>Email</h3>
-                            <p>bryanjeff.saycon@g.msuiit.edu.ph</p>
-                        </div>    
-                    </div>
-                </div>
-            </div>
-            <div class="formBx">
-                <form id="my-form" action="https://formspree.io/f/mwkwvrva" method="POST">
-                    <h3>Send a Message!</h3>
-                    <input type="text" name="subject" id="subject" placeholder="Subject">
-                    <input type="email" name="email" id="email" placeholder="Email">
-                    <textarea placeholder="Your Message" name="text" id="text"></textarea>
-                    <input type="submit" value="Send" id="my-form-button">
-                    <p id='my-form-status'></p>
-                </form>
-            </div>
-        </div>
-    </section>
-    
-    <div class="copyright">
-        <p>This webpage is made from html scratch.</p>
-    </div>
-
-    <script type="text/javascript">
-        window.addEventListener('scroll', function(){
-            var header = document.querySelector('header');
-            header.classList.toggle('sticky', window.scrollY > 100);
-        });
-
-        function toggleMenu(){
-            var menuToggle = document.querySelector('.toggle');
-            var menu = document.querySelector('.menu');
-            menuToggle.classList.toggle('active');
-            menu.classList.toggle('active');
-        }
-    </script>
-    <!-- Add Social Links and Icons-->
-    <!-- Add image slider and a fancy intro-->
-    <!-- Add Header ICON-->
+        </main>
     </body>
-    <!-- Soemthing to commit-->
-<script>
-    window.addEventListener("DOMContentLoaded", function() {
-  
-      // get the form elements defined in your form HTML above
-      
-      var form = document.getElementById("my-form");
-      var button = document.getElementById("my-form-button");
-      var status = document.getElementById("my-form-status");
-  
-      // Success and Error functions for after the form is submitted
-      
-      function success() {
-        form.reset();
-        button.style = "display: none ";
-        status.innerHTML = "Thanks!";
-      }
-  
-      function error() {
-        status.innerHTML = "Oops! There was a problem.";
-      }
-  
-      // handle the form submission event
-  
-      form.addEventListener("submit", function(ev) {
-        ev.preventDefault();
-        var data = new FormData(form);
-        ajax(form.method, form.action, data, success, error);
-      });
-    });
-    
-    // helper function for sending an AJAX request
-  
-    function ajax(method, url, data, success, error) {
-      var xhr = new XMLHttpRequest();
-      xhr.open(method, url);
-      xhr.setRequestHeader("Accept", "application/json");
-      xhr.onreadystatechange = function() {
-        if (xhr.readyState !== XMLHttpRequest.DONE) return;
-        if (xhr.status === 200) {
-          success(xhr.response, xhr.responseType);
-        } else {
-          error(xhr.status, xhr.response, xhr.responseType);
-        }
-      };
-      xhr.send(data);
-    }
-  </script>
 </html>
